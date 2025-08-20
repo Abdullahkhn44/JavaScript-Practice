@@ -314,8 +314,10 @@
 
 // console.log(Min([3, 6, 9, 1, 5]))
 
-function Sub(str,trt){
+function Sub(str, trt) {
+
+return str.includes(trt)
 
 }
 
-console.log('')
+console.log(Sub('GeeksForGeeks', 'For'))
