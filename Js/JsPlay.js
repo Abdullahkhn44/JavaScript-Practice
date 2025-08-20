@@ -314,10 +314,55 @@
 
 // console.log(Min([3, 6, 9, 1, 5]))
 
-function Sub(str, trt) {
+// function Sub(str, trt) {
 
-return str.includes(trt)
+// return str.includes(trt)
+
+// }
+
+// console.log(Sub('GeeksForGeeks', 'For'))
+
+// function freq(str) {
+
+//     let store = {};
+
+//     for (i = 0; i < str.length; i++) {
+//         const temp = str[i]
+
+//         if (store[temp]) {
+//             store[temp] = store[temp] + 1
+
+//         } else {
+//             store[temp] = 1
+
+//         }
+
+//     }
+//     for(let i=0;i<str.length;i++){
+//         let char = str[i];        
+//         if(store[char]===1){
+//             return char
+//         }
+//     }
+//     return store
+
+// }
+// console.log(freq('GeeksForGeeks'))
+
+function long(str) {
+    str = str.split(' ')
+
+    let longest = ''
+    for (let i = 0; i < str.length; i++) {
+
+        if (longest.length < str[i].length) {
+            longest = str[i]
+        }
+
+
+    }
+    return longest
 
 }
 
-console.log(Sub('GeeksForGeeks', 'For'))
+console.log(long('Name GeekForGeeks is Abdullah and'))
