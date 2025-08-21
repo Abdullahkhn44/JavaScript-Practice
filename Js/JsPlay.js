@@ -349,20 +349,113 @@
 // }
 // console.log(freq('GeeksForGeeks'))
 
-function long(str) {
-    str = str.split(' ')
+// function long(str) {
+//     str = str.split(' ')
 
-    let longest = ''
-    for (let i = 0; i < str.length; i++) {
+//     let longest = ''
+//     for (let i = 0; i < str.length; i++) {
 
-        if (longest.length < str[i].length) {
-            longest = str[i]
-        }
+//         if (longest.length < str[i].length) {
+//             longest = str[i]
+//         }
 
 
-    }
-    return longest
+//     }
+//     return longest
 
-}
+// }
 
-console.log(long('Name GeekForGeeks is Abdullah and'))
+// console.log(long('Name GeekForGeeks is Abdullah and'))
+
+// String in array to Upper case
+
+// function Upper(arr){
+//     let res = arr.map(word=>word.toUpperCase())
+//     console.log(res)
+// }
+// console.log(Upper(['f','g','abDullah']))
+
+
+// Reverse an array in JS
+
+// function reverseArray(arr) {
+//     let revArr = []
+//     for(let i=arr.length-1;i>=0;i--){
+        
+//      revArr.push(arr[i])
+     
+//     }
+// return revArr
+// }
+
+// console.log(reverseArray([1, 2, 3, 4]))
+
+
+// function last(arr){
+//     // for(i=arr.length-1;i<arr.length;i++){
+//     //     console.log(arr[i])
+//     // }
+//     return arr[arr.length-1]
+// }
+
+// console.log(last([1,2,3,4,5]))
+
+
+// function removeFalsyValues(arr){
+// let bug =[]
+//     for(let i=0;i<arr.length;i++){
+//      if(arr[i]){
+//         bug.push(arr[i])
+//      }
+     
+//     }
+//     return bug
+
+// }
+
+// console.log(removeFalsyValues([0, 5, false, 6, '', 7]));
+
+
+// factorial with recursion
+
+// function factorial(num){
+//     let temp =1;
+
+//     for(let i=2;i<=num;i++){
+//         temp = temp*i
+//     }
+//     return temp
+// }
+// console.log(factorial(5))
+
+
+// factorial recusrsion
+// function fact(n){
+//     if(n===0 || n===1){
+//         return 1;
+//     }
+//     return n * fact(n-1)
+// }
+// console.log(fact(5))
+
+// Create an object and print the property?
+
+// function obj(){
+//     let softDev = {
+//         stack:'React Native',
+//         Type:'Office',
+//         Exp:'2 Years',
+//         Salary:'50k/Month',
+//     }
+//     console.log(softDev.stack,softDev.Salary)
+    
+// }
+
+// console.log(obj())
+
+// Use the map function on an array in JavaScript?
+
+// function tryMap(arr){
+//  return arr.map(num=>num +1)
+// }
+// console.log(tryMap([1,2,3,4]))
