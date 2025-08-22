@@ -381,9 +381,9 @@
 // function reverseArray(arr) {
 //     let revArr = []
 //     for(let i=arr.length-1;i>=0;i--){
-        
+
 //      revArr.push(arr[i])
-     
+
 //     }
 // return revArr
 // }
@@ -407,7 +407,7 @@
 //      if(arr[i]){
 //         bug.push(arr[i])
 //      }
-     
+
 //     }
 //     return bug
 
@@ -448,7 +448,7 @@
 //         Salary:'50k/Month',
 //     }
 //     console.log(softDev.stack,softDev.Salary)
-    
+
 // }
 
 // console.log(obj())
@@ -459,3 +459,156 @@
 //  return arr.map(num=>num +1)
 // }
 // console.log(tryMap([1,2,3,4]))
+
+
+// let jsonData = '{"name":"John", "age":30, "car":null}'
+// console.log(jsonData)
+
+// let parsed = JSON.parse(jsonData)
+// console.log(parsed)
+
+
+// let str = 'Geeks For Geeks'
+
+// let arrStr =  str.split(' ')
+// console.log(arrStr)
+
+
+// function switchTest(num) {
+//     switch (num) {
+//         case 1:
+//             console.log('hey 1 pressed')
+//             break;
+//         case 2:
+//             console.log('2 pressed')
+//             break;
+//         case 3:
+//             console.log('3 pressed')
+//             break;
+//         case 4:
+//             console.log('4 pressed')
+//             break;
+//         case 5:
+//             console.log('5 pressed')
+//             break;
+//         default:
+
+//     }
+// }
+// console.log(switchTest(5))
+
+// function Anagram(str1, str2) {
+
+//     str1 = str1.split('')
+//     str2 = str2.split('')
+
+//     let str1Count = 0
+//     let str2Count = 0
+//     for (let i = 0; i < str1.length; i++) {
+//         for (let j = 0; j < str2.length; j++) {
+
+//             if (str1[i] && str2[i]) {
+
+//                 str1Count = str1Count + 1
+//                 str2Count = str2Count + 1
+//                 console.log(str2Count)
+//             }
+//             if (str1Count !== str2Count) {
+//                 return false
+//             }
+//         }
+//     }
+//     for (let z = 0; z < str1.length; z++) {
+//         if (str1[z] != str2[z]) {
+//             return false
+//         }
+//     }
+//     return true
+
+
+// }
+
+// console.log(Anagram('LISTEN', 'SILENT'))
+
+// function Anagram(str1, str2) {
+//     if(str1.length !== str2.length)
+//     {
+//         return false;
+//     }
+
+//     str1 = str1.split('').sort().join()
+//     str2 = str2.split('').sort().join()
+//     console.log(str1,str2)
+// return str1===str2
+
+// }
+
+// console.log(Anagram('LISTEN', 'SILENT'));
+
+
+// function Diff(arr) {
+//     let max = arr[0]
+//     let min = arr[0]
+//     for (let i = 1; i < arr.length; i++) {
+
+//         if (arr[i] > max) {
+//             max = arr[i]
+//         }
+//         if (arr[i] < min) {
+//             min = arr[i]
+//         }
+
+//     }
+//     let num = min - max
+// return {max,min,num}
+// }
+
+// console.log(Diff([3, 6, 13, 8, 12]))
+
+// function Duplicate(arr){
+
+//     let uniqueArray = []
+
+//     for(let i=0;i<arr.length;i++){
+//         if(!uniqueArray.includes(arr[i])){
+//             uniqueArray.push(arr[i])
+//         }
+//     }
+//     return uniqueArray
+// }
+
+
+// console.log(Duplicate([2,6,8,8,3,6,2,1,4,5]))
+
+// function Vowel(str) {
+//     let count = 0
+//     let vowels = 'aeiouAEIOU'
+
+//     for(let i = 0;i<str.length;i++){
+//         if(vowels.includes(str[i])){
+//             count= count + 1
+//         }
+//     }
+    
+    
+
+
+//     return count
+// }
+
+// console.log(Vowel('My name is Abdullah'))
+
+
+// function Unique(str){
+//     let uniqueArray =[]
+//     for(let i=0;i<str.length;i++){
+//         if(!uniqueArray.includes(str[i])){
+//             uniqueArray.push(str[i])
+//         }
+
+//     }
+//     return uniqueArray.join('')
+
+// }
+
+// console.log(Unique('GeeksForGeeks'))
